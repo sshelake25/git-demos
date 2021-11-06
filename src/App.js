@@ -11,7 +11,7 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
        <b> {pageTitle} </b>
         <p>
-          For git session
+          For git session 01
         </p>
         <a
           className="App-link"
