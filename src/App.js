@@ -11,6 +11,7 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
        <b> {pageTitle} </b>
         <p>
+          For git session 01
           For git session
           update made by Abhishek
         </p>
