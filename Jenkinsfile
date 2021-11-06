@@ -1,10 +1,33 @@
+//decrative 
+
 pipeline {
-    agent { docker { image 'node:14-alpine' } }
-    stages {
-        stage('build') {
-            steps {
-                sh 'npm --version'
-            }
-        }
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Building..'
+        sh 'npm --version'
+        sh 'npm run build'
+      }
     }
+    stage('Test') {
+      steps {
+        echo 'Testing..'
+        sh 'npm run test'
+      }
+    }
+
+    stage('Check syntax') {
+      steps {
+        echo 'Checking error..'
+        sh 'npm run test'
+      }
+    }
+
+    stage('Deploy') {
+      steps {
+        echo 'Deploying....'
+      }
+    }
+  }
 }
