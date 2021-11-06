@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  let pageTitle = "Welcome to react app"
+  let pageTitle = "Welcome to react app";
+  let another = "Another";
  
   return (
     <div className="App">
